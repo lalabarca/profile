@@ -126,6 +126,7 @@ ul { padding: 0;}
 .normal-list {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .normal-list li {
