@@ -123,6 +123,15 @@ a:hover {
 
 ul { padding: 0;}
 
+.normal-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.normal-list li {
+  line-height: 1.9;
+}
+
 li {
   list-style: none;
   display: inline-block;
