@@ -72,7 +72,7 @@ a:hover {
   background: linear-gradient(315deg, hsla(1, 84%, 66%, 1) 0%, hsla(19, 72%, 65%, 1) 100%);
 }
 
-#header a {
+/* #header a {
   background: #E29D64;
   color: #fff;
   display: inline-block;
@@ -88,6 +88,33 @@ a:hover {
 #header a:hover {
   background: #F1625F;
   box-shadow: 0 0 14px 1px rgba(241, 98, 95, 0.4);
+} */
+
+#header a {
+  position: relative;
+
+}
+
+#header a:before {
+  transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  content: "";
+  width: 25%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  background: #E29D64;
+}
+
+#header a:hover:before {
+  background: #E29D64;
+  width: 100%;
+}
+
+.text-link {
+  color: #30383B;
+  mix-blend-mode: difference;
 }
 
 ul { padding: 0;}
