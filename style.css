@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@300;400&display=swap');
+
+/* style général */
+.container {
+  width: 750px;
+  margin: 0 auto;
+}
+
+body {
+  background: #E7E9EE;
+  font-family: 'Open Sans', sans-serif;
+  color: #30383B;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+h1, h2 {
+  font-family: 'Libre Baskerville', serif;
+}
+
+h1 {
+  font-size: 1.7em;
+  color: #f1625f;
+  line-height: 1.8;
+}
+
+h2 {
+  font-size: 1.3em;
+  color: #393993;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #E29D64;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8em;
+  transition: all 0.4s ease-in-out;
+}
+
+a:hover {
+  color: #F1625F;
+}
+
+/* style spécifique */
+.white-card {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 4px 15px rgba(0,0,0,0.2);
+  text-align: center;
+  padding: 20px 40px;
+  margin-bottom: 20px;
+}
+
+#header {
+  margin-top: 15px;
+}
+
+#header img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding-top: 7px;
+}
+
+.gradient {
+  width: 213px;
+  height: 213px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background: linear-gradient(315deg, hsla(1, 84%, 66%, 1) 0%, hsla(19, 72%, 65%, 1) 100%);
+}
+
+#header a {
+  background: #E29D64;
+  color: #fff;
+  display: inline-block;
+  padding: 15px 20px;
+  width: 200px;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 50px;
+  margin: 15px;
+  font-weight: 400;
+}
+
+#header a:hover {
+  background: #F1625F;
+  box-shadow: 0 0 14px 1px rgba(241, 98, 95, 0.4);
+}
+
+ul { padding: 0;}
+
+li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+li a {
+  font-size: 2.2em;
+  width: 60px;
+  background: #E29D64;
+  border-radius: 50%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+li a:hover {
+  background: #F1625F;
+  color: #fff;
+}
+
+/* media queries */
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 600px;
+  }
+}
+
+@media (max-width: 500px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 350px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  li {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 330px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 300px;
+  }
+  #header a {
+    width: 150px;
+  }
+}
