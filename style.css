@@ -54,6 +54,11 @@ a:hover {
 
 #header {
   margin-top: 15px;
+  padding-bottom: 60px;
+}
+
+#header p:last-child {
+  margin-bottom: 30px;
 }
 
 #header img {
@@ -92,7 +97,6 @@ a:hover {
 
 #header a {
   position: relative;
-  margin: 15px;
 }
 
 #header a:before {
