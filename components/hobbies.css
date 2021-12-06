@@ -1,0 +1,29 @@
+iframe {
+  margin: 10px 0;
+}
+
+.normal-list {
+  margin-top: 0;
+}
+
+.normal-list li {
+  line-height: 2.2;
+  transition: padding-left 0.4s;
+}
+.normal-list li::before {
+  content: "";
+  width: 14px;
+  display: inline-block;
+  height: 4px;
+  background: #F1625F;
+  margin-right: 15px;
+  border-radius: 2px;
+}
+
+.normal-list li:hover {
+  padding-left: 20px;
+}
+
+.football-list {
+  line-height: 2.2;
+}

@@ -1,40 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@300;400&display=swap');
+@import url("components/hobbies.css");
+@import url("components/container.css");
 
 /* style général */
-.container {
-  width: 750px;
-  margin: 0 auto;
+html {
+  font-size: 18px;
 }
 
 body {
   background: #E7E9EE;
   font-family: 'Open Sans', sans-serif;
   color: #30383B;
-  font-size: 18px;
   line-height: 1.4;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Libre Baskerville', serif;
 }
 
 h1 {
-  font-size: 1.7em;
-  color: #f1625f;
-  line-height: 1.8;
+  font-size: 1em;
+  color: #536065;
+  font-weight: 400;
 }
 
 h2 {
-  font-size: 1.3em;
+  font-size: 1.3rem;
   color: #393993;
   line-height: 1.6;
+}
+
+h3 {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  margin-top: 1.2rem;
 }
 
 a {
   text-decoration: none;
   color: #E29D64;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.8em;
+  font-size: 1.8rem;
   transition: all 0.4s ease-in-out;
 }
 
@@ -83,7 +89,7 @@ a:hover {
   display: inline-block;
   padding: 15px 20px;
   width: 200px;
-  font-size: 1em;
+  font-size: 1rem;
   text-transform: uppercase;
   border-radius: 50px;
   margin: 15px;
@@ -123,24 +129,17 @@ a:hover {
 
 ul { padding: 0;}
 
-.normal-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.normal-list li {
-  line-height: 1.9;
-}
-
 li {
   list-style: none;
-  display: inline-block;
-  margin-right: 30px;
 }
 
-li a {
-  font-size: 2.2em;
+footer li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+footer li a {
+  font-size: 2.2rem;
   width: 60px;
   background: #E29D64;
   border-radius: 50%;
@@ -151,48 +150,7 @@ li a {
   color: #fff;
 }
 
-li a:hover {
+footer li a:hover {
   background: #F1625F;
   color: #fff;
-}
-
-/* media queries */
-@media (max-width: 960px) {
-  /* Pour un écran < 960px, cette classe CSS s'applique */
-  .container {
-    width: 600px;
-  }
-}
-
-@media (max-width: 500px) {
-  /* Pour un écran < 960px, cette classe CSS s'applique */
-  .container {
-    width: 400px;
-  }
-}
-
-@media (max-width: 400px) {
-  /* Pour un écran < 960px, cette classe CSS s'applique */
-  .container {
-    width: 350px;
-  }
-  ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  li {
-    margin-right: 0;
-    margin-bottom: 30px;
-  }
-}
-
-@media (max-width: 330px) {
-  /* Pour un écran < 960px, cette classe CSS s'applique */
-  .container {
-    width: 300px;
-  }
-  #header a {
-    width: 150px;
-  }
 }
